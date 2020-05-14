@@ -1,0 +1,184 @@
+@import 'reset.css';
+:root {
+    --title-color: rgb(36, 38, 173);
+    --xxxSmall: 0.5vw;
+    --xxSmall: 1vw;
+    --xSmall: 1.2vw;
+    --small: 1.5vw;
+    --normal: 2vw;
+    --large: 2.5vw;
+    --xLarge: 2.8vw;
+    --xxLarge: 3vw;
+}
+
+html {
+    font-size: var(--normal);
+}
+
+.noWrap {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.container {
+    margin: var(--xLarge) var(--xLarge) 0 var(--xLarge);
+}
+
+.header {
+    border-bottom: 2px solid silver;
+}
+
+.header, .contact {
+    color: var(--title-color);
+    font-size: var(--small);
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header, .contact a {
+    color: var(--title-color);
+    font-size: var(--small);
+}
+
+.header .contact div:not(:last-child):after {
+    content: "⋇";
+    margin-left: var(--xxxSmall);
+    margin-right: var(--xxxSmall);
+}
+
+.header .logo {
+    width: 32px;
+    height: 32px;
+    margin-right: var(--xxSmall);
+}
+
+.header .name {
+    font-size: var(--xLarge);
+    margin-bottom: var(--small);
+    margin-right: var(--small);
+    font-weight: bold;
+}
+
+.github, .linkedin {
+    display: flex;
+    align-items: center;
+}
+
+.body {
+    margin-top: var(--small);
+    display: flex;
+}
+
+.body .left {
+    width: 30%;
+    border-right: 2px solid silver;
+    padding-right: var(--small);
+    font-size: var(--normal);
+}
+
+.body .right {
+    width: 70%;
+    margin-left: var(--small);
+}
+
+.carrerCart, .eduCart {
+    margin-bottom: var(--xLarge);
+}
+
+.careerTitle, .summaryTitle, .eduTitle, .expTitle, .trainTitle, .langTitle, .techSkillTitle {
+    color: var(--title-color);
+    font-weight: bold;
+    font-size: var(--large);
+    margin-bottom: var(--xSmall);
+}
+
+.train .subject {
+    font-size: var(--small);
+    margin-bottom: var(--small);
+}
+
+.lang .langs {
+    margin-bottom: var(--small);
+    font-weight: bold;
+}
+
+.eduCart .section {
+    font-weight: bold;
+}
+
+.subTitle {
+    color: var(--title-color);
+    font-weight: bold;
+    font-size: var(--normal);
+    margin-bottom: var(--small);
+}
+
+.techSkill {
+    font-size: var(--normal);
+    margin-bottom: var(--small);
+}
+
+.techSkill p, .exprerience .skills li p {
+    margin: 0 0 var(--xSmall) 0;
+    text-indent: -3vw;
+    padding-left: 3vw;
+}
+
+.SkillCart {
+    display: flex;
+}
+
+.langTitle {
+    margin-right: var(--small);
+}
+
+.carrerCart .position, .carrerCart .company, .eduCart .school {
+    font-weight: bold;
+}
+
+.exprerience .skills ul {
+    margin: 0;
+    padding-inline-start: var(--normal);
+}
+
+li {
+    list-style-type: none;
+}
+
+.exprerience .skills li {
+    display: flex;
+}
+
+.exprerience .skills li::before {
+    content: "⋇";
+    margin-right: var(--xSmall);
+}
+
+.exprerience .skills li div:first-child {
+    margin-right: var(--small);
+}
+
+.expCart .title {
+    font-weight: bold;
+}
+
+.exprerience .skills li b {
+    margin-left: var(--xSmall);
+}
+
+.exprerience .skills li:first-child {
+    margin-top: var(--small);
+}
+
+.exprerience .skills li:last-child {
+    /* margin-bottom: var(--small); */
+}
+
+.summaryBody {
+    font-size: var(--normal);
+}
+
+.summaryBody p {
+    margin: 0 0 var(--xSmall) 0;
+}
